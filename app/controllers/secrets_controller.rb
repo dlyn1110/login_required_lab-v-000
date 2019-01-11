@@ -7,6 +7,10 @@ class SecretsController < ActionController::Base
        redirect_to '/login'
      else
        render 'show'
+     end
    end
- end
-end
+
+   def require_login
+     redirect_to controller: 'sessions', action: 'new' unless current_user
+    end
+   end

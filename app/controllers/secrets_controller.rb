@@ -5,7 +5,7 @@ class SecretsController < ActionController::Base
      if !current_user
        redirect_to '/login'
      else
-       @secret = "The secret message is found here. Another edit here."
+       render 'show'
    end
  end
 

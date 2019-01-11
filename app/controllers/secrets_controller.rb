@@ -9,5 +9,4 @@ class SecretsController < ActionController::Base
        render 'show'
    end
  end
-
- 
+end

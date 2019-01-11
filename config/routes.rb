@@ -5,7 +5,7 @@ Rails.application.routes.draw do
    post '/login' => 'sessions#create'
    get '/show' => 'secrets#show'
    delete '/session' => 'sessions#destroy'
- 
+
    root 'application#welcome'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

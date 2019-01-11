@@ -6,7 +6,7 @@ class SessionsController < ActionController::Base
     if params[:name].nil? || params[:name]
       redirect_to login_path
     else
-    session[:name] = params[:name]
+    session[:name] = params[:name] == ""
     redirect_to root_path
   end
 end

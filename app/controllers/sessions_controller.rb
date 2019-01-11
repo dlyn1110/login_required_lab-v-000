@@ -2,6 +2,8 @@ class SessionsController < ActionController::Base
   def new
   end
 
-  def create 
+  def create
+    session[:name] = params[:name]
+    redirect_to '/'
   end
 end
